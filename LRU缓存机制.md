@@ -81,7 +81,7 @@ class LRUCache {
    //桌上书满了，想放新书，就需要把你最长时间没看的书放回书架了
    //找到map中的第一个值，即书桌上最后一本书
    const deledKey = this.cache.keys().next().value;
-   this.cache.delete(firstKey);
+   this.cache.delete(deledKey);
   }
   this.cache.set(key, value);
  }
